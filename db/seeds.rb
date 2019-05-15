@@ -1,4 +1,3 @@
-puts 'Cleaning database...'
 Restaurant.destroy_all
 
 puts 'Creating restaurants...'
@@ -7,38 +6,42 @@ restaurants_attributes = [
     name:         'Dishoom',
     address:      '7 Boundary St, London E2 7JE',
     phone_number:  '555 555 555',
-    reviews:        5
+    category: 'italian'
+
 
   },
-
   {
-    name:         'Dishoom',
+    name:         'Mushhoom',
     address:      '7 Boundary St, London E2 7JE',
     phone_number:  '555 555 555',
-    reviews:        5
+    category: 'italian'
+
 
   },
-
   {
-    name:         'Dishoom',
+    name:         'Delishhoom',
     address:      '7 Boundary St, London E2 7JE',
     phone_number:  '555 555 555',
-    reviews:        5
+    category: 'italian'
+
 
   },
-
   {
-    name:         'Dishoom',
+    name:         'Whoom',
     address:      '7 Boundary St, London E2 7JE',
     phone_number:  '555 555 555',
-    reviews:        5
+    category: 'italian'
+    # reviews:        5
 
   },
-
   {
-    name:         'Dishoom',
+    name:         'Badabhoom',
     address:      '7 Boundary St, London E2 7JE',
     phone_number:  '555 555 555',
-    reviews:        5
+    category: 'italian'
+    # reviews:        5
 
-  }]
+  }
+]
+
+  Restaurant.create!(restaurants_attributes)

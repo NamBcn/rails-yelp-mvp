@@ -1,4 +1,12 @@
-<%= @restaurants %>
+<% @restaurants.each_with_index do |restaurant| %>
+<%= restaurant.name %>
+<%= restaurant.address %>
+<%= restaurant.phone_number %>
+<%= restaurant.category %>
+<%= restaurant.created_at %>
+<%= restaurant.updated_at %>
+<% end %>
+
 
 
 <!-- t.string "name"
